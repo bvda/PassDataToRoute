@@ -7,9 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
-
+    data: any 
    constructor(private router: Router) { 
-    console.log(this.router.getCurrentNavigation()?.extras.state?.d) 
+    this.data = this.router.getCurrentNavigation()?.extras.state?.d 
   }
 
   ngOnInit(): void { }
